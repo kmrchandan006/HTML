@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <frameset rows="40%,*">
+            <frame src="top.html" noresize scrolling="NO" name="topframe">
+            <frameset cols="15%,*">
+            <frame src="left.html" noresize scrolling="NO" name="leftframe">
+            <frame src="right.html" noresize name="rightframe" scrolling="auto">
+            </frameset>
+            </frameset>
+            
+            top.html:
+            <html>
+            <head>
+            <title>Top Frame</title>
+            </head>
+            <body bgcolor="YellowGreen ">
+            <img src="images/logo1.png" width="125" height="115" align="left">
+            
+            
+             
+             
+            <img src="images/cse.png" width="125" height="115" align="right">
+            <center>
+            <marquee bgcolor="yellow" width="650" behavior="alternate">
+            <font face="Brush Script MT" size="8" color="green"><b><i>Online Book Store</i></b>
+            </font>
+            </marquee> <br>
+            <font	face="Brush	Script"	size="6"	color="white"><b>Created	&	Maintained	By MRCET</b></font>
+            </center>
+            <br>
+            <table width="100%" height="50%" cellspacing=10>
+            <tr align="center">
+            <td>	<a href="Home.html" target="_parent"><font face="Brush Script" size="6" color="navy">HOME </a> </td>
+            <td> <a href="login.html" target="rightframe"><font face="Brush Script" size="6" color="navy">LOGIN</a> </td>
+            <td> <a href="registration.html" target="rightframe"> <font face="Brush Script" size="6" color="navy">REGISTER </a> </td>
+            <td> <a href="catalogue.html" target="rightframe"> <font face="Brush Script" size="6" color="navy">CATALOGUE</a> </td>
+            </tr>
+            </table>
+            </body>
+            </html>
+            
+            left.html:
+            <html>
+            <body align="center" bgcolor="bisque"> <br>
+            <a href="cse.html" target="rightframe"><font size="6">CSE</font></a><br><br>
+            <a href="ece.html" target="rightframe"><font size="6">ECE</font></a><br><br>
+            <a href="eee.html" target="rightframe"><font size="6">EEE</font></a><br><br>
+            <a href="mech.html" target="rightframe"><font size="6">MECH</font></a><br>
+            </body>
+            </html>
+            
+            right.html:
+            <html>
+            <body bgcolor="orange">
+            <center>
+            <img src="images/Books.jpg" height="170"><br>
+            <font face="Brush Script MT" size="5" color="blue">
+            <h1><b>Welcome to the Online Book Store!!!</b></font><br />
+            <font face="Brush Script MT" size="5" color="red">
+            <h2><b> "A Huge Collection Of Engineering E-Books"</b></h2></font>
+            </center>
+            </body>
+            </html>
+            
+            
+             
+             
+            cse.html:
+            <html>
+            <head><title>CSE</title></head>
+            <body bgcolor="cyan">
+            <center><font color="blue"><h1>Computer Science and Engineering</h1></font></center>
+            <br>
+            <table align="center">
+            <tr>
+            <td>Text Books</td>
+            <td>
+            <select >
+            <option value="select the book" selected>Select the book
+            <option value="C&Ds">C&Ds
+            <option value="Ads">Ads
+            <option value="Java">Java
+            <option value="Oracle">Oracle
+            <option value="Ms SQL Server">Ms SQL Server
+            <option value="MySql">MySql
+            </select>
+            </td></tr>
+            <tr>
+            <td>Quantity</td>
+            <td><input type="text" id="q"></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td>
+            <form method = post action="order.html">
+            <input type="submit" value =ok />
+            </form>
+            </td>
+            </tr>
+            </table>
+            <center>
+            <pre> Cost of one book is"500" + shipping "100" </pre>
+            </center>
+            </body>
+            </html>
+            
+            ece.html:
+            <html>
+            <body bgcolor="Plum">
+            <h1><font color="blue">Electronics and Communication Engineering</font></h1>
+            <h2>
+            <ul>
+            <li>Digital Circuits</li> <li>Signals and Systems</li> <li>Digital Communication</li>
+            </ul>
+            </h2>
+            </body>
+            </html>
+            
+            
+             
+             
+            eee.html:
+            <html>
+            <body bgcolor="Plum">
+            <h1><font color="blue">Electrical and Electronics Engineering</font></h1>
+            <h2>
+            <ul type="square">
+            <li>Concepts in Electric Circuits</li>
+            <li>Introduction to Electronic Engineering</li>
+            <li>Electrical Power</li>
+            </ul>
+            </h2>
+            </body>
+            </html>
+            
+            mech.html:
+            <html>
+            <body bgcolor="Plum">
+            <h1><font color="blue">Electronics and Communication Engineering</font></h1>
+            <h2>
+            <ol type="I">
+            <li>Theory of Machines</li>
+            <li>Automation and Robotics</li>
+            <li>Engineering Fluid Mechanics</li>
+            </ol>
+            </h2>
+            </body>
+            </html>
+            
+            catalogue.html:
+            <html>
+            <head>
+            <title> Catalogue </title>
+            </head>
+            <body bgcolor="pink">
+            <form action="order.html">
+            <table border="1" width="100%">
+            <tr>
+            <td>
+            <img src="images/wt.jpg" width=100 height=100/>
+            </td>
+            <td> Book: Web Technologies <br> Author: Uttam K. Roy <br> Publication:Oxford University Press</td> <td>531 &nbsp;&nbsp;&nbsp;</td>
+            <td> <input type="submit" value="Add to cart"/></td> </tr>
+            <tr>
+            <td> <img src="images/php.jpg" width=100 height=100/></td>
+            <td> Book: PHP & MySQL Web Development <br> Author:Luke Welling & Laura Thompson <br> Publication:PEARSON</td> <td> 898 &nbsp;&nbsp;&nbsp; </td>
+            <td> <input type="submit" value="Add to cart"/></td> </tr>
+            </table> </form>
+            </body> </html>
+            
+            
+             
+             
+            login.html:
+            <html>
+            <body bg color="pink">
+            <basefont face="Cambria" size="4"> <br>
+            <center>
+            <img src="images/login.jpg" width="385" height="135" /><br />
+            <font face="Brush Script MT" size="7" color="purple">
+            <b>Enter Login Details:</b>
+            </font>
+            </center>
+            <form name="f1" method="post" action="right.html">
+            <table align="center" width="100" height="150" cellspacing=”15”>
+            <tr><td><b>Login ID:</b></td>
+            <td><input type="text" name="t1"></td>
+            </tr>
+            <tr>
+            <td><b>Password:</b></td>
+            <td><input type="password" name="t2"></td>
+            </tr>
+            <tr align="center">
+            <td><input type="submit" name="b1" value="Submit"></td>
+            <td><input type="reset" name="b2" value="Reset"></td>
+            </tr>
+            </table>	</form>	</basefont> </body>	</html>
+            
+            registration.html:
+            <html>
+            <head><title>Registration Form</title></head>
+            <body bgcolor="#E4F0F8">
+            <center><font color="blue" size="6" face="arial">Registration Form</font></center><br />
+            <form action="right.html">
+            First Name(Minimum 6 characters)<font color="red">* </font>
+            <input type='text' id='firstname' /><br /><br />
+            Last Name<font color="red"><font color="red">* </font> </font> &nbsp;&nbsp;&nbsp;
+            <input type='text' id='lastname' /><br /><br /> EmailAddress<font color="red">* </font> &nbsp;&nbsp;&nbsp;
+            <input type='text' id='email' /><br />
+            <font color="red">(one e-mail id only):</font> &nbsp;&nbsp;&nbsp;
+            <font color="redblue">e.g. smith@hotmail.com</font><br /><br/> Password(minimum 6 characters)<font color="red">* </font> &nbsp;&nbsp;&nbsp;
+            <input type='password' id='pass'><br /><br/> Address<font color="red">* </font> &nbsp;&nbsp;&nbsp;
+            <textarea rows="2" cols="20" id='addr' /></textarea> <br /> <br/> Mobile No<font color="red">* </font> &nbsp;&nbsp;&nbsp;
+            <input type='text' id='mobileno' /><br /> Gender: <input type='radio' name="gender">male
+            <input type='radio' name="gender">female<br/><br />
+            <input type='Submit' value='submit' />
+            <input type='Reset' value='reset' />
+            </form>	</body>	</html>
+            
+            
+             
+             
+            
+            order.html:
+            <html>
+            <head><title>order conformation</title></head>
+            <body bgcolor="cyan">
+            <center>
+            <pre><strong>
+            <b>Your order Is Conformed
+            </strong></pre>
+            <h2><b>THANK YOU...Visit Again</h2>
+            </center>
+            </body>
+            </html>
+            
+            
+    </h1>
+</body>
+</html>
